@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Alberto Mozo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet"> 
+   <!--  <link rel="stylesheet" href="css/cv.css"> -->
+</head>
+<body>
+
+    <div class="contenido" id="contenido">
+        
+        
+    </div>
+    
+    <!-- script donde tengo los datos que voy usar -->
+    <script src="js/00-cv.js"></script>
+    <!-- <script src="js/00-github.js"></script> -->
+    <script src="js/01-github.js"></script>
+    <script>
+        const datosPersonales = `<h1>Datos Linkedin</h1>
+        <section id="datos_personales"><p><strong>Nombre:</strong> ${cv.aboutMe.profile.name}   ${cv.aboutMe.profile.surnames}</p>
+            <p><strong>Lema : </strong> ${cv.aboutMe.profile.title
+            }</p>
+        </p>
+            <p><strong>Descpción : </strong> ${cv.aboutMe.profile.description
+            }</p>
+        </section>`;
+        document.getElementById('contenido').innerHTML = datosPersonales;
+        
+    </script>
+    
+    
+</body>
+</html>
